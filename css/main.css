@@ -3,8 +3,9 @@
  *@autor NadavRimon
  */
 
- * {
-  /*outline: red 3px solid;*/
+@font-face{
+	font-family: comical;
+	src: url('http://benjaminewhite.github.io/jquery-streetfighter-example/fonts/animeace2_reg.otf');
 }
 
  body {
@@ -22,16 +23,17 @@
 }
 
 .ryu {
+    float: left;
     width: 659px;
     height: 494px;
 }
 
-.ryu-ready, .ryu-still, .ryu-throwing {
+.ryu-ready, .ryu-still, .ryu-throwing, .ryu-cool {
   width: 659px;
   height: 494px;
 }
 
-.ryu-ready, .ryu-throwing {
+.ryu-ready, .ryu-throwing, .ryu-cool {
   display: none;
 } 
 
@@ -47,6 +49,10 @@
   background-image: url('../images/ryu-throwing-hadouken.png');
 }
 
+.ryu-cool {
+  background-image: url('../images/ryu-cool.gif');
+}
+
 .hadouken {
   background-image: url('../images/hadouken.gif');
   width: 156px; 
@@ -59,6 +65,21 @@
   left: 588px;
 }
 
-.hadouken, .ryu-ready, .ryu-still, .ryu-throwing {
+.hadouken, .ryu-ready, .ryu-still, .ryu-throwing, .ryu-cool {
   background-repeat: no-repeat;
+}
+
+.how-to {
+    font-family: 'comical', sans-serif;
+    font-size: 24px;
+	line-height: 45px;
+    float: left;
+}
+
+.how-to p {
+    width: 250px;
+}
+
+.how-to p + p {
+	margin-left: 275px;
 }
